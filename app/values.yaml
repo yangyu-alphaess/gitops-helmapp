@@ -1,0 +1,9 @@
+replicaCount: 2
+image:
+  repository: swr.cn-north-4.myhuaweicloud.com/ddn-k8s/docker.io/hashicorp/http-echo
+  tag: "1.0"
+  pullPolicy: IfNotPresent
+service:
+  type: ClusterIP
+  port: 5678
+message: "Hello from myapp!"
